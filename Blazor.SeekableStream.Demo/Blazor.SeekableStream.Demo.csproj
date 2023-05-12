@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Blazor.SeekableStreamReference\Blazor.SeekableStreamReference.csproj" />
+    <ProjectReference Include="..\Blazor.SeekableStream\Blazor.SeekableStream.csproj" />
   </ItemGroup>
 
 </Project>

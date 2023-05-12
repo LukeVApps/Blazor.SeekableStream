@@ -1,4 +1,4 @@
-﻿using Blazor.SeekableStreamReference;
+﻿using Blazor.SeekableStream;
 
 namespace Microsoft.JSInterop;
 

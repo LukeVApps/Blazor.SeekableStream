@@ -1,4 +1,4 @@
-﻿namespace Blazor.SeekableStreamReference;
+﻿namespace Blazor.SeekableStream;
 
 public interface IJSSeekableStreamReference : IAsyncDisposable
 {

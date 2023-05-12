@@ -1,4 +1,4 @@
-using Blazor.SeekableStreamReference.Demo;
+using Blazor.SeekableStream.Demo;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

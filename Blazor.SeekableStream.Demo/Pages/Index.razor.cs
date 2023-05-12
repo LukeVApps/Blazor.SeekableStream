@@ -1,6 +1,6 @@
 ﻿using Microsoft.JSInterop;
 
-namespace Blazor.SeekableStreamReference.Demo.Pages;
+namespace Blazor.SeekableStream.Demo.Pages;
 
 sealed partial class Index : IAsyncDisposable
 {

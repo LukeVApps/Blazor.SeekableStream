@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace Blazor.SeekableStreamReference;
+namespace Blazor.SeekableStream;
 
 internal class JSSeekableStreamReference : IJSSeekableStreamReference
 {
