@@ -1,0 +1,43 @@
+﻿@page "/"
+
+@inject IJSRuntime Js;
+
+<div class="container">
+    <h1>SeekableStreamReference Demo</h1>
+
+    <div class="input-group mb-3">
+        <div class="input-group-text">
+            <label>
+                <input type="checkbox" @bind="useSeekable" />
+                Use Seekable Stream
+            </label>
+        </div>
+        <button class="btn btn-primary flex-grow-1" @onclick="PickAFileAsync">
+            Pick a File
+        </button>
+    </div>
+
+    <p>
+        Stream Length:
+        @(length?.ToString() ?? "N/A")
+    </p>
+
+    <fieldset disabled="@(stream is null)" class="mb-3">
+        <p>
+            <button @onclick="ReadRandomAsync" class="btn btn-primary">
+                Read Random @(RandomReadSize) bytes
+            </button>
+        </p>
+
+        <textarea @bind="bytes" class="form-control" readonly rows="10"></textarea>
+    </fieldset>
+
+    @if (error is not null)
+    {
+        <div class="alert alert-danger">
+            @(error)
+        </div>
+    }
+
+</div>
+
