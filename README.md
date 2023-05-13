@@ -44,6 +44,3 @@ var stream = await seekable.OpenReadStreamAsync();
 
 // Work with Stream
 ```
-
-> **Warning**  
-> With the current implementation, it's likely the whole file is read into memory because it calls `arrayBuffer()`. I am attempting to resolve it to achieve true random read.
