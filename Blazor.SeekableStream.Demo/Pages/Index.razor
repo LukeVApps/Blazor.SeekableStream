@@ -22,6 +22,11 @@
         @(length?.ToString() ?? "N/A")
     </p>
 
+    <p>
+        Stream Seeakable:
+        @(isStreamSeekable.HasValue ? isStreamSeekable.Value.ToString() : "N/A")
+    </p>
+
     <fieldset disabled="@(stream is null)" class="mb-3">
         <p>
             <button @onclick="ReadRandomAsync" class="btn btn-primary">
